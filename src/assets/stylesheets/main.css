@@ -30,6 +30,180 @@
 .ma-response__text-ok {
   color: #008000; }
 
+.ma-container {
+  padding-top: 20px; }
+
+.ma-companies {
+  padding: 10px; }
+  .ma-companies__title {
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: left;
+    background: #eee;
+    font-weight: 400;
+    padding: 5px 15px; }
+  .ma-companies__total, .ma-companies__list, .ma-companies__partners, .ma-companies__location, .ma-companies__news {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    height: 300px; }
+  .ma-companies__total-info {
+    display: none;
+    width: 150px;
+    height: 150px;
+    padding-top: 55px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 24px; }
+
+.ma-companies__partners {
+  display: none; }
+
+#floatingCirclesG {
+  position: relative;
+  width: 67px;
+  height: 67px;
+  margin: 75px auto;
+  transform: scale(0.6);
+  -o-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6); }
+
+.f_circleG {
+  position: absolute;
+  background-color: white;
+  height: 12px;
+  width: 12px;
+  border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  animation-name: f_fadeG;
+  -o-animation-name: f_fadeG;
+  -ms-animation-name: f_fadeG;
+  -webkit-animation-name: f_fadeG;
+  -moz-animation-name: f_fadeG;
+  animation-duration: 1.35s;
+  -o-animation-duration: 1.35s;
+  -ms-animation-duration: 1.35s;
+  -webkit-animation-duration: 1.35s;
+  -moz-animation-duration: 1.35s;
+  animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-direction: normal;
+  -o-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal; }
+
+#frotateG_01 {
+  left: 0;
+  top: 27px;
+  animation-delay: 0.51s;
+  -o-animation-delay: 0.51s;
+  -ms-animation-delay: 0.51s;
+  -webkit-animation-delay: 0.51s;
+  -moz-animation-delay: 0.51s; }
+
+#frotateG_02 {
+  left: 8px;
+  top: 8px;
+  animation-delay: 0.68s;
+  -o-animation-delay: 0.68s;
+  -ms-animation-delay: 0.68s;
+  -webkit-animation-delay: 0.68s;
+  -moz-animation-delay: 0.68s; }
+
+#frotateG_03 {
+  left: 27px;
+  top: 0;
+  animation-delay: 0.85s;
+  -o-animation-delay: 0.85s;
+  -ms-animation-delay: 0.85s;
+  -webkit-animation-delay: 0.85s;
+  -moz-animation-delay: 0.85s; }
+
+#frotateG_04 {
+  right: 8px;
+  top: 8px;
+  animation-delay: 1.01s;
+  -o-animation-delay: 1.01s;
+  -ms-animation-delay: 1.01s;
+  -webkit-animation-delay: 1.01s;
+  -moz-animation-delay: 1.01s; }
+
+#frotateG_05 {
+  right: 0;
+  top: 27px;
+  animation-delay: 1.18s;
+  -o-animation-delay: 1.18s;
+  -ms-animation-delay: 1.18s;
+  -webkit-animation-delay: 1.18s;
+  -moz-animation-delay: 1.18s; }
+
+#frotateG_06 {
+  right: 8px;
+  bottom: 8px;
+  animation-delay: 1.35s;
+  -o-animation-delay: 1.35s;
+  -ms-animation-delay: 1.35s;
+  -webkit-animation-delay: 1.35s;
+  -moz-animation-delay: 1.35s; }
+
+#frotateG_07 {
+  left: 27px;
+  bottom: 0;
+  animation-delay: 1.52s;
+  -o-animation-delay: 1.52s;
+  -ms-animation-delay: 1.52s;
+  -webkit-animation-delay: 1.52s;
+  -moz-animation-delay: 1.52s; }
+
+#frotateG_08 {
+  left: 8px;
+  bottom: 8px;
+  animation-delay: 1.69s;
+  -o-animation-delay: 1.69s;
+  -ms-animation-delay: 1.69s;
+  -webkit-animation-delay: 1.69s;
+  -moz-animation-delay: 1.69s; }
+
+@keyframes f_fadeG {
+  0% {
+    background-color: rgba(0, 0, 0, 0.93); }
+  100% {
+    background-color: white; } }
+
+@-o-keyframes f_fadeG {
+  0% {
+    background-color: rgba(0, 0, 0, 0.93); }
+  100% {
+    background-color: white; } }
+
+@-ms-keyframes f_fadeG {
+  0% {
+    background-color: rgba(0, 0, 0, 0.93); }
+  100% {
+    background-color: white; } }
+
+@-webkit-keyframes f_fadeG {
+  0% {
+    background-color: rgba(0, 0, 0, 0.93); }
+  100% {
+    background-color: white; } }
+
+@-moz-keyframes f_fadeG {
+  0% {
+    background-color: rgba(0, 0, 0, 0.93); }
+  100% {
+    background-color: white; } }
+
 *,
 *:after,
 *:before {
