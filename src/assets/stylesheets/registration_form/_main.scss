@@ -1,0 +1,39 @@
+.ma-form {
+  margin: 65px 0 500px;
+  padding: 0 25px 25px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  &__title {
+    margin: 0 auto 20px;
+    font-size: 24px;
+    text-align: center;
+    background: #eee;
+    font-weight: 700;
+    padding: 3px 0;
+  }
+  &__title-row {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+  &__select {
+    width: 100%;
+    margin-bottom: 15px;
+    color: #9B98B8;
+    font-weight: 400;
+  }
+  &__select-option {
+    width: 100%;
+  }
+}
+
+.glyphicon {
+  top: 0;
+}
+
+.ma-response__text-error {
+  color: #f00;
+}
+
+.ma-response__text-ok {
+  color: #008000;
+}
