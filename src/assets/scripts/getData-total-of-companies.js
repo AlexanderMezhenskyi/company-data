@@ -5,28 +5,33 @@ $(document).ready(function () {
 			url: "http://codeit.pro/frontTestTask/company/getList",
 			dataType: 'json',
 			beforeSend: function () {
-				console.log('Запрос стартует');
-				$('#floatingCirclesG').show();
+				$('#loader-total').html('<img src="assets/img/Spin.svg" alt="loader">').show();
+				//$('#loader-list').html('<img src="assets/img/Spin.svg" alt="loader">').show();
 				$('.ma-companies__total-info').hide();
-
-
+				//$('.ma-companies__list-info').hide();
 			},
 			complete: function () {
-				console.log('Запрос окончен');
-				$('#floatingCirclesG').hide();
+				$('#loader-total').html('<img src="assets/img/Spin.svg" alt="loader">').hide();
+				//$('#loader-list').html('<img src="assets/img/Spin.svg" alt="loader">').hide();
 				$('.ma-companies__total-info').show();
+				//$('.ma-companies__list-info').show();
 			},
 			error: function (jqXHR, textStatus, errorThrown) {
 				console.log('Ошибка: ' + textStatus + ' | ' + errorThrown);
 			},
 			success: function (data) {
-				$('.ma-companies__total-info').append(data.list.length);
-				console.log('success', data.list.length);
 
+				let count = 0;
+				for(let i=0; i <= data.list.length; i++){
+					if (data.list[i]) {
+						count++;
+					}
+				}
+				$('.ma-companies__total-info').append(count);
+				//$('.ma-companies__list-info').append(count);
 			}
 		});
 		return false;
 	}
-
 	getDataForTotalOfCompanies();
 });
