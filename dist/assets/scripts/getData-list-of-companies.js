@@ -21,7 +21,7 @@ $(document).ready(function () {
 				//let partnersName = "<tr>";
 				//let partnersValue = "<tr>";
 				companies.forEach((company) => {
-					companyList += "<li class=\"ma-companies__list-item\">" + company.name + "</li>";
+					companyList += "<li class=\"ma-companies__list-item\" onclick=\"getDataForListOfPartners()\">" + company.name + "</li>";
 					//let partnersOfcompany = company.partners;
 					//partnersOfcompany.forEach((partner) => {
 					//	partnersName += "<td>" + partner.name + "</td>";
@@ -35,9 +35,9 @@ $(document).ready(function () {
 
 				$('.ma-companies__list-info').append(companyList);
 				//$('.ma-companies__list-item').on('click', function () {
-					$('.ma-tbody').append(partnersName);
-					$('.ma-tbody').append(partnersValue);
-				})
+					//$('.ma-tbody').append(partnersName);
+					//$('.ma-tbody').append(partnersValue);
+				//})
 			}
 		});
 		return false;
